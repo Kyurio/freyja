@@ -1,0 +1,31 @@
+
+.loader {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #040D12;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 7px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+@keyframes spinner {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

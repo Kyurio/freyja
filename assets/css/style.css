@@ -1,0 +1,1182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rockett-dreams');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+footer {
+    color: white !important;
+}
+
+main {
+    min-height: 100vh;
+}
+
+iframe {
+    width: 100% !important;
+    height: 90vh;
+    /* O ajusta la altura según sea necesario */
+    border: none;
+    /* Para quitar el borde predeterminado del iframe */
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 60vh;
+        /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. offcanvas   
+/*----------------------------------------*/
+
+.offcanvas {
+    width: 100% !important;
+}
+
+.testimonial {
+    padding: 100px 0;
+}
+
+.testimonial .row .tabs {
+    all: unset;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial .row .tabs li {
+    all: unset;
+    display: block;
+    position: relative;
+}
+
+.testimonial .row .tabs li.active::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #645341;
+    border-radius: 50%;
+}
+
+.testimonial .row .tabs li.active::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #645341;
+    border-radius: 50%;
+}
+
+.testimonial .row .tabs li:nth-child(1) {
+    align-self: flex-end;
+}
+
+.testimonial .row .tabs li:nth-child(1)::before {
+    left: 64%;
+    bottom: -50px;
+}
+
+.testimonial .row .tabs li:nth-child(1)::after {
+    left: 97%;
+    bottom: -81px;
+}
+
+.testimonial .row .tabs li:nth-child(1) figure img {
+    margin-left: auto;
+}
+
+.testimonial .row .tabs li:nth-child(2) {
+    align-self: flex-start;
+}
+
+.testimonial .row .tabs li:nth-child(2)::before {
+    right: -65px;
+    top: 50%;
+}
+
+.testimonial .row .tabs li:nth-child(2)::after {
+    bottom: 101px;
+    border-radius: 50%;
+    right: -120px;
+}
+
+.testimonial .row .tabs li:nth-child(2) figure img {
+    margin-right: auto;
+    max-width: 300px;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.testimonial .row .tabs li:nth-child(3) {
+    align-self: flex-end;
+}
+
+.testimonial .row .tabs li:nth-child(3)::before {
+    right: -10px;
+    top: -66%;
+}
+
+.testimonial .row .tabs li:nth-child(3)::after {
+    top: -130px;
+    border-radius: 50%;
+    right: -46px;
+}
+
+.testimonial .row .tabs li:nth-child(3) figure img {
+    margin-left: auto;
+    margin-top: -50px;
+}
+
+.testimonial .row .tabs li:nth-child(3):focus {
+    border: 10px solid red;
+}
+
+.testimonial .row .tabs li figure {
+    position: relative;
+}
+
+.testimonial .row .tabs li figure img {
+    display: block;
+}
+
+.testimonial .row .tabs li figure::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #dff9d9;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.testimonial .row .tabs li figure:hover::after {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.testimonial .row .tabs.carousel-indicators li.active figure::after {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.testimonial .row .carousel>h3 {
+    font-size: 20px;
+    line-height: 1.45;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.testimonial .row .carousel h1 {
+    font-size: 40px;
+    line-height: 1.225;
+    margin-top: 23px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.testimonial .row .carousel .carousel-indicators {
+    all: unset;
+    padding-top: 43px;
+    display: flex;
+    list-style: none;
+}
+
+.testimonial .row .carousel .carousel-indicators li {
+    background: #000;
+    background-clip: padding-box;
+    height: 2px;
+}
+
+.testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
+    margin-top: 42px;
+}
+
+.testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
+    font-size: 18px;
+    line-height: 1.72222;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+    color: #000;
+    font-weight: 700;
+    margin-top: 37px;
+    font-size: 20px;
+    line-height: 1.45;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+    body .testimonial .row .tabs {
+        margin-right: 25px;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. BANNER   
+/*----------------------------------------*/
+
+
+/* Estilos generales */
+
+.banner-title {
+    font-size: 5.1em;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: white;
+}
+
+.subtitle {
+    font-family: 'Rockett Dreams', sans-serif;
+}
+
+.parallax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh !important;
+}
+
+
+/* Media Query para pantallas más pequeñas, ajusta según sea necesario */
+
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    .parallax h1 {
+        font-size: 2em;
+        /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+    .parallax p {
+        font-size: 1em;
+        /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
+
+
+/* Estilos para pantallas más pequeñas (ajusta según tus necesidades) */
+
+@media screen and (max-width: 768px) {
+    .banner-title {
+        font-size: 3.5em;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner-title {
+        font-size: 2.5em;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. BUTTONS   
+/*----------------------------------------*/
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: inherit;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+    border: 0;
+}
+
+
+/* btn */
+
+.os-btn {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 42px;
+    border: 2px solid #ebebeb;
+    color: #323232;
+    background: transparent;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.os-btn span {
+    color: #8a8f6a;
+}
+
+.os-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #8a8f6a;
+    z-index: -1;
+}
+
+.os-btn:hover {
+    color: #ffffff;
+    border-color: #8a8f6a;
+}
+
+.os-btn:hover::after {
+    height: 100%;
+}
+
+.os-btn:hover span {
+    color: #ffffff;
+}
+
+.os-btn-2 {
+    border-color: #323232;
+}
+
+.os-btn-3 {
+    padding: 0 77px;
+}
+
+.os-btn-4::after {
+    background: #666;
+}
+
+.os-btn-black {
+    color: #ffffff;
+    background-color: #323232;
+    border-color: #323232;
+}
+
+.os-btn-black::after {
+    background-color: #8a8f6a;
+}
+
+.os-btn-black:hover {
+    border-color: #8a8f6a;
+}
+
+.os-btn-white {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.os-btn-white:hover {
+    color: #323232;
+    border-color: #ffffff;
+}
+
+.os-btn-white:hover::after {
+    background: #ffffff;
+}
+
+.os-btn-4 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 42px;
+    border: 2px solid #323232;
+    color: #323232;
+    background: transparent;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.os-btn-4 span {
+    color: #8a8f6a;
+}
+
+.os-btn-4::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #8a8f6a;
+    z-index: -1;
+}
+
+.os-btn-4:hover {
+    color: #ffffff;
+    border-color: #8a8f6a;
+}
+
+.os-btn-4:hover::after {
+    height: 100%;
+}
+
+.os-btn-4:hover span {
+    color: #ffffff;
+}
+
+.os-btn-5 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 42px;
+    border: 2px solid #ebebeb;
+    color: #ffffff;
+    background: transparent;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.os-btn-5 span {
+    color: #8a8f6a;
+}
+
+.os-btn-5::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #8a8f6a;
+    z-index: -1;
+}
+
+.os-btn-5:hover {
+    color: #ffffff;
+    border-color: #8a8f6a;
+}
+
+.os-btn-5:hover::after {
+    height: 100%;
+}
+
+.os-btn-5:hover span {
+    color: #ffffff;
+}
+
+.link-btn {
+    font-size: 12px;
+    color: #444;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.link-btn:hover {
+    color: #8a8f6a;
+}
+
+.action-btn {
+    background: #201f1f;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 31.9px;
+    transition: 0.3s;
+}
+
+.action-btn:hover {
+    background: #8a8f6a;
+    color: #ffffff;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. NAVBAR
+/*----------------------------------------*/
+
+.navbar {
+    background: transparent;
+    transition: background 0.5s;
+    padding: 1rem;
+}
+
+.navbar.scrolled {
+    background: #b7b06a;
+    /* Cambia el color de fondo después de desplazarse 95vh */
+}
+
+.offcanvas.show .navbar-nav .nav-link {
+    color: #333 !important;
+    /* Cambia el color del texto de los elementos del menú en el offcanvas */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1rem;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. CARD carousel
+/*----------------------------------------*/
+
+.carousel-item {
+    height: 600px !important;
+}
+
+.carousel-caption {
+    color: #001524;
+    margin-bottom: 10rem;
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. CARD POINTER
+/*----------------------------------------*/
+
+.map {
+    background-color: #645341 !important;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    text-align: center;
+    /* Alineación del texto en el centro */
+    color: white;
+    /* Color del texto (puedes personalizarlo) */
+    padding: 5rem;
+}
+
+.pointer {
+    background-color: #645341 !important;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    text-align: center;
+    /* Alineación del texto en el centro */
+    color: white;
+    /* Color del texto (puedes personalizarlo) */
+    padding: 5rem;
+}
+
+.social {
+    /*background-color: #b7b06a !important;*/
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    text-align: center;
+    /* Alineación del texto en el centro */
+    color: white;
+    /* Color del texto (puedes personalizarlo) */
+    padding: 5rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/22/04/56/torres-del-paine-2667815_1280.jpg');
+    /*background-image: url('../../assets/images/main.png'); */
+    /* Segunda imagen */
+}
+
+.social a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .map,
+    .pointer,
+    .social {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .social {
+        padding: 2rem;
+        height: 35rem;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  footer
+/*----------------------------------------*/
+
+footer {
+    background-color: #b7b06a !important;
+    color: white !important;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. CARD SECTION
+/*----------------------------------------*/
+
+
+/* .card-img-top {
+    max-height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+
+/* Estilo para el card */
+
+.card {
+    border: none;
+    /* Elimina el borde del card */
+    background-color: #fff;
+    /* Establece el fondo blanco */
+    border-radius: 10px;
+    /* Agrega bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave */
+}
+
+
+/* Estilo para el título del card */
+
+.card-title {
+    font-size: 1.25rem;
+    /* Tamaño del título */
+}
+
+
+/* Estilo para la imagen del card */
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    /* Redondea la esquina superior izquierda de la imagen */
+    border-top-right-radius: 10px;
+    /* Redondea la esquina superior derecha de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen al tamaño del contenedor */
+    max-height: 250px;
+    /* Altura máxima de la imagen */
+}
+
+
+/* Estilo para los íconos */
+
+.card i {
+    font-size: 2rem;
+    /* Tamaño del ícono */
+}
+
+
+/* Estilo para las filas de contenido */
+
+.card-body {
+    padding: 1.5rem;
+    /* Espaciado interno del contenido */
+}
+
+
+/* Estilo para los elementos de precio y descripción */
+
+.card-body span {
+    font-size: 1rem;
+    /* Tamaño del precio y descripción */
+}
+
+
+/* Estilo para el total */
+
+.card-body .total {
+    font-size: 1.25rem;
+    /* Tamaño del total */
+    margin-top: 1rem;
+    /* Espaciado superior del total */
+    color: #000;
+    /* Color del total */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+
+/*----------------------------------------*/
+
+
+/*      2. CONTACT SECTION
+/*----------------------------------------*/
+
+.contact__info h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 52px;
+}
+
+.contact__info p {
+    margin-bottom: 55px;
+}
+
+.contact__info ul li:hover .contact__info-icon i {
+    border-color: #323232;
+    background: #323232;
+    color: #ffffff;
+}
+
+.contact__info-icon i {
+    font-size: 18px;
+    color: #6c6c6c;
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    line-height: 49px;
+    text-align: center;
+    border: 2px solid #ebebeb;
+}
+
+.contact__info-content h6 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.contact__info-content span {
+    color: #606060;
+}
+
+.contact__social ul li {
+    display: inline-block;
+    margin-right: 42px;
+}
+
+.contact__social ul li a {
+    font-size: 18px;
+    color: #606060;
+}
+
+.contact__social ul li a:hover {
+    color: #645341;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact__form {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .contact__form {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__form {
+        margin-top: 50px;
+    }
+}
+
+.contact__form h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.contact__input label {
+    color: #333333;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact__input label span.required {
+    color: red;
+}
+
+.contact__input input,
+.contact__input textarea {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ececec;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.contact__input input:focus,
+.contact__input textarea:focus {
+    border-color: #645341;
+}
+
+.contact__input textarea {
+    height: 180px;
+    resize: none;
+    margin-bottom: 45px;
+}
+
+.contact__map-wrapper {
+    height: 590px;
+}
+
+.contact__map-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/*----------------------------------------*/
+
+
+/*      2. TEAM SECTION
+/*----------------------------------------*/
+
+.intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.intro p {
+    margin-bottom: 0;
+}
+
+.people {
+    padding: 50px 0;
+    cursor: pointer;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 83, 65, 1);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+    padding-top: 280px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .cover {
+    opacity: 1;
+}
+
+.item .name {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bbd8fb;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.social {
+    font-size: 18px;
+}
+
+.social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+
+/*----------------------------------------*/
+
+
+/*      2. foteer
+/*----------------------------------------*/
+
+footer {
+    height: 5rem !important;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. icon SECTION
+/*----------------------------------------*/
+
+.icon {
+    font-size: 3.5rem;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  1. icon SECTION
+/*----------------------------------------*/
+
+.item-presentacion {
+    position: relative;
+    min-height: 80vh;
+}
+
+.item-presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.title-precio {
+    color: #FFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+.precio {
+    padding: 6px 16px;
+    background-color: #f9e400;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+.elemento-section {
+    padding: 10% 5%;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.title-product {
+    color: #FFF;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 4vw;
+    /* Ajuste para pantallas pequeñas */
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.hr-product {
+    background-color: white !important;
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-product {
+    text-align: center;
+    color: #FFF;
+    font-size: 2vw;
+    /* Ajuste para pantallas pequeñas */
+    font-weight: 400;
+    line-height: 1.2em;
+    position: relative;
+    z-index: 2;
+}
+
+.item-descripcion {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.vend-parcelas {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/images/bg_vende_tu_terreno.jpeg');
+}
+
+.subicon {
+    font-size: 2rem;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .title-precio,
+    .precio,
+    .title-product,
+    .text-product {
+        font-size: 8vw;
+    }
+}
+
+
+/***********************************************
+*
+* 7 chatbot
+*
+************************************************/
+
+
+/* Estilos para el asistente virtual */
+
+.asistente-virtual {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chat-icon {
+    background-color: #010103;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/*********************************************
+*
+*  chatbot
+*
+**********************************************/
+
+.offcanvasChatBot {
+    width: 30% !important;
+    height: 60% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    margin-right: 15px !important;
+    margin-bottom: 15px !important;
+}
